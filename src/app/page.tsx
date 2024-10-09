@@ -1,3 +1,6 @@
+import Navbar from "./navbar/navbar"
 export default function Home() {
-  return(<div>Hello World</div>);
+  return(<div>
+    <Navbar />
+    Hello World</div>);
 }
