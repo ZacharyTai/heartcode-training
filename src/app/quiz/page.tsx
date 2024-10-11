@@ -89,16 +89,16 @@ export default function Quiz() {
     >
       <div className="bg-black bg-opacity-50 min-h-screen flex items-center justify-center">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6 bg-black p-8 rounded-lg shadow-lg">
-            {/* Question 1 */}
+          <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6 bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+            {/* Name Field */}
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>What is your name?</FormLabel>
+                  <FormLabel className="text-black dark:text-white">What is your name?</FormLabel>
                   <FormControl>
-                    <Input placeholder="your name here" {...field} />
+                    <Input className="border border-gray-300 dark:border-gray-700 text-black dark:text-white bg-white dark:bg-gray-800" placeholder="Your name here" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -111,10 +111,10 @@ export default function Quiz() {
               name="question1"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>What is the main chemical in marijuana that makes people feel "high"?</FormLabel>
+                  <FormLabel className="text-black dark:text-white">What is the main chemical in marijuana that makes people feel "high"?</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <SelectTrigger>
+                      <SelectTrigger className="border border-gray-300 dark:border-gray-700 text-black dark:text-white bg-white dark:bg-gray-800">
                         <SelectValue placeholder="Please select an answer" />
                       </SelectTrigger>
                     </FormControl>
@@ -136,10 +136,10 @@ export default function Quiz() {
               name="question2"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Which of these drugs can cause serious long-term damage to your body and is highly addictive?</FormLabel>
+                  <FormLabel className="text-black dark:text-white">Which of these drugs can cause serious long-term damage to your body and is highly addictive?</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <SelectTrigger>
+                      <SelectTrigger className="border border-gray-300 dark:border-gray-700 text-black dark:text-white bg-white dark:bg-gray-800">
                         <SelectValue placeholder="Please select an answer" />
                       </SelectTrigger>
                     </FormControl>
@@ -161,10 +161,10 @@ export default function Quiz() {
               name="question3"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>What is a big danger of using drugs like heroin?</FormLabel>
+                  <FormLabel className="text-black dark:text-white">What is a big danger of using drugs like heroin?</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <SelectTrigger>
+                      <SelectTrigger className="border border-gray-300 dark:border-gray-700 text-black dark:text-white bg-white dark:bg-gray-800">
                         <SelectValue placeholder="Please select an answer" />
                       </SelectTrigger>
                     </FormControl>
@@ -186,10 +186,10 @@ export default function Quiz() {
               name="question4"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Which of these drugs is very addictive and hard to quit?</FormLabel>
+                  <FormLabel className="text-black dark:text-white">Which of these drugs is very addictive and hard to quit?</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <SelectTrigger>
+                      <SelectTrigger className="border border-gray-300 dark:border-gray-700 text-black dark:text-white bg-white dark:bg-gray-800">
                         <SelectValue placeholder="Please select an answer" />
                       </SelectTrigger>
                     </FormControl>
@@ -211,10 +211,10 @@ export default function Quiz() {
               name="question5"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Which drug is most commonly associated with feelings of relaxation or being "chill"?</FormLabel>
+                  <FormLabel className="text-black dark:text-white">Which drug is most commonly associated with feelings of relaxation or being "chill"?</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <SelectTrigger>
+                      <SelectTrigger className="border border-gray-300 dark:border-gray-700 text-black dark:text-white bg-white dark:bg-gray-800">
                         <SelectValue placeholder="Please select an answer" />
                       </SelectTrigger>
                     </FormControl>
@@ -231,7 +231,7 @@ export default function Quiz() {
             />
 
             {/* Submit Button */}
-            <Button type="submit">Submit</Button>
+            <Button className="bg-blue-500 dark:bg-blue-700 text-white" type="submit">Submit</Button>
           </form>
         </Form>
       </div>
