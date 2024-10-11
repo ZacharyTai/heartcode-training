@@ -13,8 +13,7 @@ export default function Home() {
     >
       <div className="flex flex-col h-full items-center justify-center bg-black bg-opacity-50">
         <h1 className="font-bold text-5xl text-white text-center">
-          Say NO to{""}
-          <FlipWords words={words} />
+          Say NO to&nbsp;<FlipWords words={words} />
         </h1>
       </div>  
     </div>
